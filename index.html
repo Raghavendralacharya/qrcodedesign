@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | QR code component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .full-screen-div {
+            height: 100vh;
+            background-color: rgb(206, 222, 246); /* Replace with your desired color code */
+            color: #ffffff; /* Optionally, set text color */
+            text-align: center; /* Optionally, center text within the div */
+            align-items: center;
+            justify-content: center;
+        }
+    .centered-image {
+      max-width: 100%; /* Ensures the image doesn't exceed the container width */
+      max-height: 100%; /* Ensures the image doesn't exceed the container height */
+      margin: 5px;
+    }
+    .centered-container {
+      margin: 2px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh; /* Adjust this value based on your needs */
+    }
+    .flex-col {
+      flex-direction: column
+    }
+
+    .card {
+      background-color: rgba(242, 243, 245, 0.962);
+      padding: 10px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .border-radius-10 {
+      border-radius: 10px;
+    } 
+    h4 {
+      color: black;
+    }
+
+    h4.b {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    p {
+      color: rgb(139, 139, 139);
+      font-size: 12px;
+    }
+  </style>
+</head>
+<body>
+
+ <div class="full-screen-div">
+    <div class="centered-container">
+      <div class="flex-col card border-radius-10">
+        <img src="./images/image-qr-code.png" alt="qr code" width="200" height="200" class="centered-image border-radius-10">
+        <h4 class="b">
+          Improve your front-end <br/> skills by building projects
+        </h4>
+        <p>
+          Scan the QR code to visit Frontend <br /> Mentor and take your coding skills to <br />the next level
+        </p>
+      </div>
+    </div>
+ </div>
+</body>
+</html>
